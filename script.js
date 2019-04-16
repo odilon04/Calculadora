@@ -1,17 +1,13 @@
 
-function calcularQuantidade() {
-    var quantidade_de_carne = window.document.getElementById("adultos1");
-    var adultos1String = adultos1Element.value;
-    var quantidade_de_carne = window.document.getElementById("adultos2");
-    var adultos2String = adultos2Element.value;
-    var quantidade_de_carne = window.document.getElementById("criancas");
-    var criancasString = criancasElement.value;
+function calcular() {
+    var adultos1 = parseInt(document.querySelector('#adultos1').value);
+    var adultos2 = parseInt(document.querySelector('#adultos2').value);
+    var criancas = parseInr(document.querySelector('#criancas').value);
+
+    var calcularCarne = (adultos1 * 0,5) + (criancas * 0,25);
+    var calcularPao = adultos2 * 5;
+
+    alert("É necessário" +calcularCarne+ "Kg de carne" <br/>"É necessário" +calcularPao+ "Pães");
+
     
-    console.log("idadeString = " + idadeString);
-    var idade = parseInt(idadeString);
-    if (idade >= 18) {
-        alert("MAIOR de idade.");
-    } else {
-        alert("MENOR de idade.");
-    }
 }
