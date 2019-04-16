@@ -7,7 +7,7 @@ function calcular() {
     var calcularCarne = (adultos1 * 0,5) + (criancas * 0,25);
     var calcularPao = adultos2 * 5;
 
-    alert("É necessário" +calcularCarne+ "Kg de carne" <br/>"É necessário" +calcularPao+ "Pães");
-
+    alert("É necessário" +calcularCarne+ "Kg de carne");
+    alert("É necessário" +calcularPao+ "Pães");
     
 }
